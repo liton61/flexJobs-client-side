@@ -3,7 +3,7 @@
 const BideRequests = () => {
     return (
         <div>
-            <h1>Bide Requests</h1>
+            <h1>Bid Requests</h1>
         </div>
     );
 };
