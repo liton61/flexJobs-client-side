@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Front-end Developer",
+        "deadline": "2023-12-31",
+        "price": "$50,000 - $80,000",
+        "description": "Create interactive and responsive user interfaces using HTML, CSS, and JavaScript."
+    },
+    {
+        "title": "Back-end Developer",
+        "deadline": "2023-11-30",
+        "price": "$60,000 - $90,000",
+        "description": "Build server-side applications and APIs using technologies like Node.js, Python, or Ruby."
+    },
+    {
+        "title": "Full-stack Developer",
+        "deadline": "2023-12-15",
+        "price": "$70,000 - $100,000",
+        "description": "Develop both front-end and back-end of web applications for a seamless user experience."
+    },
+    {
+        "title": "UI/UX Designer",
+        "deadline": "2023-11-25",
+        "price": "$45,000 - $75,000",
+        "description": "Design user-friendly and visually appealing interfaces to enhance the user experience."
+    },
+    {
+        "title": "Web Developer Intern",
+        "deadline": "2023-12-10",
+        "price": "Unpaid",
+        "description": "Gain hands-on experience and learn web development through an internship program."
+    },
+    {
+        "title": "WordPress Developer",
+        "deadline": "2023-12-20",
+        "price": "$40,000 - $70,000",
+        "description": "Specialize in developing websites and plugins using the WordPress platform."
+    }
+]
