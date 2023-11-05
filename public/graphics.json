@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Graphic Designer",
+        "deadline": "2023-12-31",
+        "price": "$45,000 - $70,000",
+        "description": "Create visual concepts, design layouts, and produce graphics for various projects."
+    },
+    {
+        "title": "UI/UX Designer",
+        "deadline": "2023-11-30",
+        "price": "$50,000 - $80,000",
+        "description": "Design user interfaces and user experiences for web and mobile applications."
+    },
+    {
+        "title": "Logo Designer",
+        "deadline": "2023-12-15",
+        "price": "$35,000 - $60,000",
+        "description": "Specialize in crafting unique and memorable logos for brands and businesses."
+    },
+    {
+        "title": "Illustrator",
+        "deadline": "2023-11-25",
+        "price": "$40,000 - $70,000",
+        "description": "Create hand-drawn or digital illustrations for various artistic and commercial projects."
+    },
+    {
+        "title": "Print Production Artist",
+        "deadline": "2023-12-10",
+        "price": "$40,000 - $65,000",
+        "description": "Prepare digital files for print, ensure quality, and assist with print production."
+    },
+    {
+        "title": "Packaging Designer",
+        "deadline": "2023-12-20",
+        "price": "$45,000 - $75,000",
+        "description": "Design packaging materials and labels for products, considering branding and aesthetics."
+    }
+]

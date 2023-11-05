@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Digital Marketing Specialist",
+        "deadline": "2023-12-31",
+        "price": "$50,000 - $80,000",
+        "description": "Plan and execute digital marketing campaigns, including SEO, social media, and email."
+    },
+    {
+        "title": "SEO Analyst",
+        "deadline": "2023-11-30",
+        "price": "$45,000 - $75,000",
+        "description": "Optimize websites for search engines, conduct keyword research, and analyze SEO."
+    },
+    {
+        "title": "Social Media Manager",
+        "deadline": "2023-12-15",
+        "price": "$55,000 - $90,000",
+        "description": "Manage social media accounts, create content, and engage with the online community."
+    },
+    {
+        "title": "Content Marketing Strategist",
+        "deadline": "2023-11-25",
+        "price": "$60,000 - $95,000",
+        "description": "Develop content marketing strategies, create engaging content, and track content."
+    },
+    {
+        "title": "Email Marketing Specialist",
+        "deadline": "2023-12-10",
+        "price": "$45,000 - $70,000",
+        "description": "Design and execute email marketing campaigns, segment lists, and analyze email."
+    },
+    {
+        "title": "PPC Advertising Manager",
+        "deadline": "2023-12-20",
+        "price": "$60,000 - $100,000",
+        "description": "Manage pay-per-click advertising campaigns, optimize ad spend, and analyze ROI."
+    }
+]

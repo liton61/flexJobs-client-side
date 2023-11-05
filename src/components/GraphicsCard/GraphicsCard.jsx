@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
 
-const WebCard = ({ job }) => {
+const GraphicsCard = ({ job }) => {
     const { title, deadline, price, description } = job;
     return (
         <div>
@@ -22,4 +22,4 @@ const WebCard = ({ job }) => {
     );
 };
 
-export default WebCard;
+export default GraphicsCard;
