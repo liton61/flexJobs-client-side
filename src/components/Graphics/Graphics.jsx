@@ -5,7 +5,7 @@ import GraphicsCard from "../GraphicsCard/GraphicsCard";
 const Graphics = () => {
     const [jobs, setJobs] = useState([]);
     useEffect(() => {
-        fetch('marketing.json')
+        fetch('http://localhost:5000/graphics')
             .then(res => res.json())
             .then(data => setJobs(data))
     }, [])
