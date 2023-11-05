@@ -1,0 +1,38 @@
+[
+    {
+        "img": "https://i.postimg.cc/KY9L6Ryz/01.webp",
+        "title": "Software Engineer",
+        "price": "$80,000 - $120,000",
+        "rating": 4.7
+    },
+    {
+        "img": "https://i.postimg.cc/TwpmffRc/02.jpg",
+        "title": "Data Scientist",
+        "price": "$90,000 - $130,000",
+        "rating": 4.9
+    },
+    {
+        "img": "https://i.postimg.cc/mZ1MnLpL/03.jpg",
+        "title": "UX/UI Designer",
+        "price": "$70,000 - $110,000",
+        "rating": 4.5
+    },
+    {
+        "img": "https://i.postimg.cc/3JMp5szg/04.jpg",
+        "title": "Digital Marketing",
+        "price": "$60,000 - $100,000",
+        "rating": 4.6
+    },
+    {
+        "img": "https://i.postimg.cc/cH23J2CG/05.jpg",
+        "title": "Project Manager",
+        "price": "$85,000 - $130,000",
+        "rating": 4.8
+    },
+    {
+        "img": "https://i.postimg.cc/GtDyTKT8/06.png",
+        "title": "Full Stack Developer",
+        "price": "$75,000 - $120,000",
+        "rating": 4.6
+    }
+]

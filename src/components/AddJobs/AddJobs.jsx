@@ -9,7 +9,7 @@ const AddJobs = () => {
                         <label className="block text-gray-700 text-sm font-bold mb-2">
                             Email of the employer
                         </label>
-                        <input className="w-full bg-gray-100 text-gray-700 border rounded py-2 px-3 focus:outline-none" type="text" id="employer-email" name="employer-email" value="example@employer.com" />
+                        <input className="w-full bg-white text-gray-700 border rounded py-2 px-3 focus:outline-none" type="text" id="employer-email" name="employer-email" placeholder="Enter your email" required />
                     </div>
                     <div className="mb-4">
                         <label className="block text-gray-700 text-sm font-bold mb-2">

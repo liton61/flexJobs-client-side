@@ -1,18 +1,14 @@
-// import Graphics from "../Graphics/Graphics";
-// import Marketing from "../Marketing/Marketing";
-import ReactTab from "../ReactTab/ReactTab";
+// import ReactTab from "../ReactTab/ReactTab";
 import Slider from "../Slider/Slider";
-// import Web from "../Web/Web";
+import TrendingJobs from "../TrendingJobs/TrendingJobs";
 
 
 const Home = () => {
     return (
         <div>
             <Slider></Slider>
-            <ReactTab></ReactTab>
-            {/* <Web></Web> */}
-            {/* <Marketing></Marketing> */}
-            {/* <Graphics></Graphics> */}
+            {/* <ReactTab></ReactTab> */}
+            <TrendingJobs></TrendingJobs>
         </div>
     );
 };

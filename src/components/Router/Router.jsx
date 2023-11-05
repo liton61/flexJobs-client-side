@@ -8,6 +8,7 @@ import MyBids from "../MyBids/MyBids";
 import BideRequests from "../BideRequests/BideRequests";
 import Login from "../Login/Login";
 import Register from "../Register/Register";
+import JobDetails from "../JobDetails/JobDetails";
 
 
 const router = createBrowserRouter([
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
             {
                 path: "/register",
                 element: <Register></Register>,
+            },
+            {
+                path: "/jobDetails",
+                element: <JobDetails></JobDetails>,
             },
         ],
     },
