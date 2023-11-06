@@ -40,11 +40,11 @@ const AddJobs = () => {
     }
 
     return (
-        <div className="lg:w-3/4 mx-auto p-5">
+        <div className="lg:w-3/4 mx-auto p-5 my-10">
             <form onSubmit={handleAddJob} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
                 <div className="mb-4">
                     <label className="block text-gray-700 text-sm font-bold mb-2">
-                        Email of the employer
+                        Email
                     </label>
                     <input className="w-full bg-white text-gray-700 border rounded py-2 px-3 focus:outline-none" type="email" name="email" placeholder="Enter your email" required />
                 </div>
