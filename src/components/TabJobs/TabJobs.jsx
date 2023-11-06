@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import PropTypes from 'prop-types';
+import { Link } from "react-router-dom";
 let categoryName = [
 
     { id: "Web Development", label: "Web Development" },
@@ -61,9 +62,11 @@ const TabJobs = ({ jobs }) => {
                                                 <p className="text-gray-500 text-sm">Description : {job.description}</p>
                                             </div>
                                             <div className="px-6 py-4">
+                                                <Link to={`/jobDetails/${job._id}`}>
                                                 <button className="bg-green-300 hover:bg-green-400 font-bold py-2 px-4 rounded w-full">
                                                     Bid Now
                                                 </button>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>

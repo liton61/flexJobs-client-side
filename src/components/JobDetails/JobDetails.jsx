@@ -1,9 +1,12 @@
+import { useLoaderData } from "react-router-dom";
+import JobDetailsCard from "../JobDetailsCard/JobDetailsCard";
 
 
 const JobDetails = () => {
+    const jobs = useLoaderData();
     return (
         <div>
-            <h1>Job Details</h1>
+            <JobDetailsCard jobs={jobs}></JobDetailsCard>
         </div>
     );
 };
