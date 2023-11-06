@@ -15,7 +15,7 @@ const Register = () => {
 
         if (password.length < 6) {
             return Swal.fire({
-                position: 'center',
+                position: 'top',
                 icon: 'error',
                 title: 'Password must be at least 6 characters !',
                 showConfirmButton: false,
@@ -35,7 +35,7 @@ const Register = () => {
 
         if (!/[^A-Za-z0-9]/.test(password)) {
             return Swal.fire({
-                position: 'center',
+                position: 'top',
                 icon: 'error',
                 title: 'Password must contain special characters !',
                 showConfirmButton: false,
@@ -47,7 +47,7 @@ const Register = () => {
             .then(res => {
                 console.log(res);
                 Swal.fire({
-                    position: 'center',
+                    position: 'top',
                     icon: 'success',
                     title: 'You have successfully registered !',
                     showConfirmButton: false,
@@ -75,6 +75,10 @@ const Register = () => {
                         <div className="mb-6">
                             <label className="block text-gray-600 text-sm font-medium mb-2">Password</label>
                             <input type="password" id="password" name="password" className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-green-400" placeholder="Enter your password" required />
+                        </div>
+                        <div className="mb-6">
+                            <label className="block text-gray-600 text-sm font-medium mb-2">Photo URL</label>
+                            <input type="photo" id="photo" name="photo" className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-green-400" placeholder="Enter your photo url" required />
                         </div>
                         <div className="mb-6">
                             <button type="submit" className="w-full bg-green-300 py-2 px-4 rounded-lg hover:bg-green-400 focus:outline-none focus:bg-green-400 font-medium">Register</button>
