@@ -30,7 +30,7 @@ const Header = () => {
                             <li className="mx-2 font-medium"><NavLink
                                 to="/addJob"
                                 className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "active" : ""}>Add Job</NavLink></li>
+                                    isPending ? "pending" : isActive ? "active" : ""}>Add Jobs</NavLink></li>
                             <li className="mx-2 font-medium"><NavLink
                                 to="/myPostedJobs"
                                 className={({ isActive, isPending }) =>
@@ -58,7 +58,7 @@ const Header = () => {
                         <li className="mx-2 font-medium"><NavLink
                             to="/addJob"
                             className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "active" : ""}>Add Job</NavLink></li>
+                                isPending ? "pending" : isActive ? "active" : ""}>Add Jobs</NavLink></li>
                         <li className="mx-2 font-medium"><NavLink
                             to="/myPostedJobs"
                             className={({ isActive, isPending }) =>

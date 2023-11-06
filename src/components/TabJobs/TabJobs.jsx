@@ -57,8 +57,9 @@ const TabJobs = ({ jobs }) => {
                                             <div className="px-6 py-4">
                                                 <div className="font-bold text-xl mb-2">{job.title}</div>
                                                 <p className="text-base font-medium text-red-400">Deadline : {job.deadline}</p>
-                                                <p className="text-green-400 text-base font-medium">Price : {job.minPrice} - <span>{job.maxPrice}</span></p>
+                                                <p className="text-green-400 text-base font-medium">Price : {job.price}</p>
                                                 <p className="text-gray-500 text-sm">Description : {job.description}</p>
+                                                <p className="text-gray-500 text-sm">Email : {job.email}</p>
                                             </div>
                                             <div className="px-6 py-4">
                                                 <Link to={`/jobDetails/${job._id}`}>
