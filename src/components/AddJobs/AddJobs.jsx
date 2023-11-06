@@ -17,7 +17,6 @@ const AddJobs = () => {
         const from = location.state?.from?.pathname || "/myPostedJobs";
 
         const jobsInfo = { email, title, deadline, description, category, price };
-        console.log(jobsInfo);
 
         fetch('http://localhost:5000/jobs', {
             method: "POST",

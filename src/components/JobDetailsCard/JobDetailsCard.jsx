@@ -21,7 +21,6 @@ const JobDetailsCard = ({ jobs }) => {
         const from = location.state?.from?.pathname || "/myBids";
 
         const details = { price, deadline, email, buyerEmail };
-        console.log(details);
 
         fetch('http://localhost:5000/bids', {
             method: "POST",
