@@ -51,8 +51,7 @@ const TabJobs = ({ jobs }) => {
                     .map((job, index) => (
                         <div key={index}>
                             <div key={job._id}>
-                                <div className="  ">
-
+                                <div>
                                     <div>
                                         <div className="w-96 rounded-lg overflow-hidden shadow-lg bg-white mx-auto my-10">
                                             <div className="px-6 py-4">
@@ -63,9 +62,9 @@ const TabJobs = ({ jobs }) => {
                                             </div>
                                             <div className="px-6 py-4">
                                                 <Link to={`/jobDetails/${job._id}`}>
-                                                <button className="bg-green-300 hover:bg-green-400 font-bold py-2 px-4 rounded w-full">
-                                                    Bid Now
-                                                </button>
+                                                    <button className="bg-green-300 hover:bg-green-400 font-bold py-2 px-4 rounded w-full">
+                                                        Bid Now
+                                                    </button>
                                                 </Link>
                                             </div>
                                         </div>
