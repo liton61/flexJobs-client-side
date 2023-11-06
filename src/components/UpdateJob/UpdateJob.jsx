@@ -3,7 +3,7 @@ import Swal from "sweetalert2";
 
 
 const UpdateJob = () => {
-    const job = useLoaderData([]);
+    const job = useLoaderData();
     const { _id, email, title, deadline, description, category, price } = job;
     const handleUpdateJob = e => {
         e.preventDefault();
