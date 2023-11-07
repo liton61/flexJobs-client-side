@@ -17,10 +17,11 @@ const JobDetailsCard = ({ jobs }) => {
         const deadline = form.deadline.value;
         const email = form.email.value;
         const buyerEmail = form.buyerEmail.value
+        const title = form.title.value
 
         const from = location.state?.from?.pathname || "/myBids";
 
-        const details = { price, deadline, email, buyerEmail };
+        const details = { price, deadline, email, buyerEmail, title };
 
         fetch('http://localhost:5000/bids', {
             method: "POST",
@@ -55,9 +56,20 @@ const JobDetailsCard = ({ jobs }) => {
                 </div>
             </div>
             <div className="p-6">
-                <div className="max-w-lg mx-auto bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                <div className="max-w-4xl mx-auto bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
                     <h1 className="text-2xl font-semibold mb-4 text-center">Place Your Bid</h1>
-                    <form onSubmit={handleBid} className="grid grid-cols-2 gap-4">
+                    <form onSubmit={handleBid}>
+                        <div className="mb-4">
+                            <label className="block text-gray-700">Title</label>
+                            <input
+                                type="text"
+                                id="title"
+                                name="title"
+                                defaultValue={title}
+                                placeholder="Enter Title"
+                                className="w-full border p-2 rounded focus:outline-none"
+                            />
+                        </div>
                         <div className="mb-4">
                             <label className="block text-gray-700">Price</label>
                             <input
