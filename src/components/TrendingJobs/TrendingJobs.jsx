@@ -15,7 +15,7 @@ const TrendingJobs = () => {
                 <h1 className="text-center text-4xl font-semibold">Trending Jobs</h1>
                 <hr className="border-t-4 border-green-300 mt-2" />
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:w-[1100px] mx-auto mb-10">
                 {
                     trendingJobs.map(trendingJob => <TrendingJobsCard key={trendingJob._id} trendingJob={trendingJob}></TrendingJobsCard>)
                 }
