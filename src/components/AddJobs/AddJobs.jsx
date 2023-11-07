@@ -1,9 +1,12 @@
+import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import { AuthContext } from "../Provider/AuthProvider";
 
 
 const AddJobs = () => {
     const navigate = useNavigate();
+    const { user } = useContext(AuthContext)
     const handleAddJob = e => {
         e.preventDefault();
         const form = e.target;
@@ -46,7 +49,7 @@ const AddJobs = () => {
                     <label className="block text-gray-700 text-sm font-bold mb-2">
                         Email
                     </label>
-                    <input className="w-full bg-white text-gray-700 border rounded py-2 px-3 focus:outline-none" type="email" name="email" placeholder="Enter your email" required />
+                    <input className="w-full bg-white text-gray-700 border rounded py-2 px-3 focus:outline-none" type="email" name="email" defaultValue={user?.email} readOnly={true} placeholder="Enter your email" required />
                 </div>
                 <div className="mb-4">
                     <label className="block text-gray-700 text-sm font-bold mb-2">

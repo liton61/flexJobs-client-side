@@ -46,14 +46,14 @@ const TabJobs = ({ jobs }) => {
                 ))}
             </div>
 
-            <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4 ">
+            <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4 md:gap-10">
                 {jobsCurrentTab
                     .map((job, index) => (
                         <div key={index}>
                             <div key={job._id}>
                                 <div>
                                     <div>
-                                        <div className="w-96 rounded-lg overflow-hidden shadow-lg bg-white mx-auto my-10">
+                                        <div className="w-96 md:w-80 lg:w-96 rounded-lg overflow-hidden shadow-lg bg-white mx-auto my-10">
                                             <div className="px-6 py-4">
                                                 <div className="font-bold text-xl mb-2">{job.title}</div>
                                                 <p className="text-base font-medium text-red-400">Deadline : {job.deadline}</p>

@@ -118,7 +118,9 @@ const JobDetailsCard = ({ jobs }) => {
                         <div className="col-span-2 mt-6">
                             <button
                                 type="submit"
-                                className="bg-green-300 p-2 rounded hover:bg-green-400 w-full font-medium"
+                                className={`bg-green-300 p-2 rounded hover:bg-green-400 w-full font-medium ${user?.email === email ? 'bg-gray-300 cursor-not-allowed' : ''
+                                    }`}
+                                disabled={user?.email === email}
                             >
                                 Bid
                             </button>

@@ -6,7 +6,7 @@ const TrendingJobsCard = ({ trendingJob }) => {
     return (
         <div>
             <div className="card lg:w-80 lg:h-72 md:w-80 md:h-80 w-96 bg-base-100 shadow-xl mx-auto mt-10">
-                <figure><img className="w-full lg:h-full md:h-48  h-48" src={img} alt="" /></figure>
+                <figure><img className="w-full lg:h-48 md:h-48  h-48" src={img} alt="" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">
                         {title}

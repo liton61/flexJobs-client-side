@@ -59,10 +59,18 @@ const Header = () => {
                             to="/addJob"
                             className={({ isActive, isPending }) =>
                                 isPending ? "pending" : isActive ? "active" : ""}>Add Jobs</NavLink></li>
-                        <li className="mx-2 font-medium"><NavLink
-                            to="/myPostedJobs"
-                            className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "active" : ""}>My Posted Jobs</NavLink></li>
+                        {user && (
+                            <li className="mx-2 font-medium">
+                                <NavLink
+                                    to="/myPostedJobs"
+                                    className={({ isActive, isPending }) =>
+                                        isPending ? "pending" : isActive ? "active" : ""
+                                    }
+                                >
+                                    My Posted Jobs
+                                </NavLink>
+                            </li>
+                        )}
                         <li className="mx-2 font-medium"><NavLink
                             to="/myBids"
                             className={({ isActive, isPending }) =>
