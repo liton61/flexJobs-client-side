@@ -14,7 +14,7 @@ const MyBids = () => {
     }, [url])
     return (
         <div>
-            <div className="overflow-x-auto w-3/4 mx-auto my-20">
+            <div className="overflow-x-auto lg:w-3/4 mx-auto my-20 w-full">
                 <table className="table">
                     <thead>
                         <tr className="bg-neutral text-white">

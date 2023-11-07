@@ -10,7 +10,7 @@ const MyPostedJobs = () => {
         <div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-10">
                 {
-                    jobs.map(job => <MyPostedJobsCard key={job._id} job={job} singleJob={singleJob}
+                    singleJob.map(job => <MyPostedJobsCard key={job._id} job={job} singleJob={singleJob}
                         setSingleJob={setSingleJob}></MyPostedJobsCard>)
                 }
             </div>

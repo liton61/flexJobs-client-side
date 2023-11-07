@@ -4,14 +4,16 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 const Register = () => {
-    const { createUser } = useContext(AuthContext);
+    const { createUser, profile } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
 
     const handleRegister = (e) => {
         e.preventDefault();
+        const name = e.target.name.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
+        const photo = e.target.photo.value;
 
         if (password.length < 6) {
             return Swal.fire({
@@ -46,16 +48,20 @@ const Register = () => {
         createUser(email, password)
             .then(res => {
                 console.log(res);
-                Swal.fire({
-                    position: 'top',
-                    icon: 'success',
-                    title: 'You have successfully registered !',
-                    showConfirmButton: false,
-                    timer: 2000
-                });
-                navigate(location?.state ? location.state : '/')
-                    .catch(error => console.log(error))
+                profile(name, photo)
+                    .then(() => {
+                        Swal.fire({
+                            position: 'top',
+                            icon: 'success',
+                            title: 'You have successfully registered !',
+                            showConfirmButton: false,
+                            timer: 2000
+                        });
+                        navigate(location?.state ? location.state : '/')
+                            .catch(error => console.log(error))
+                    })
             })
+
             .catch(error => console.log(error));
     };
     return (
