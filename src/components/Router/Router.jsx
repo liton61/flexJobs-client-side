@@ -22,7 +22,7 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>,
-                loader: () => fetch('http://localhost:5000/jobs')
+                loader: () => fetch(' https://flex-jobs-server-side.vercel.app/jobs')
             },
             {
                 path: "/addJob",
@@ -31,7 +31,7 @@ const router = createBrowserRouter([
             {
                 path: "/myPostedJobs",
                 element: <PrivateRoute><MyPostedJobs></MyPostedJobs></PrivateRoute>,
-                loader: () => fetch('http://localhost:5000/jobs')
+                loader: () => fetch(' https://flex-jobs-server-side.vercel.app/jobs')
             },
             {
                 path: "/myBids",
@@ -52,12 +52,12 @@ const router = createBrowserRouter([
             {
                 path: "/jobDetails/:id",
                 element: <PrivateRoute><JobDetails></JobDetails></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/jobs/${params.id}`)
+                loader: ({ params }) => fetch(` https://flex-jobs-server-side.vercel.app/jobs/${params.id}`)
             },
             {
                 path: "/updateJob/:id",
                 element: <UpdateJob></UpdateJob>,
-                loader: ({ params }) => fetch(`http://localhost:5000/jobs/${params.id}`)
+                loader: ({ params }) => fetch(` https://flex-jobs-server-side.vercel.app/jobs/${params.id}`)
             },
         ],
     },

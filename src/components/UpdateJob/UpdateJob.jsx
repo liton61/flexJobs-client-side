@@ -17,7 +17,7 @@ const UpdateJob = () => {
 
         const updateJob = { email, title, deadline, description, category, price };
 
-        fetch(`http://localhost:5000/jobs/${_id}`, {
+        fetch(` https://flex-jobs-server-side.vercel.app/jobs/${_id}`, {
             method: "PUT",
             headers: {
                 "content-type": "application/json",

@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet";
 const BideRequests = () => {
     const [bids, setBids] = useState([]);
     const { user } = useContext(AuthContext);
-    const url = `http://localhost:5000/bids?email=${user?.email}`;
+    const url = ` https://flex-jobs-server-side.vercel.app/bids?email=${user?.email}`;
     useEffect(() => {
         fetch(url)
             .then(res => res.json())

@@ -22,7 +22,7 @@ const AddJobs = () => {
 
         const jobsInfo = { email, title, deadline, description, category, price };
 
-        fetch('http://localhost:5000/jobs', {
+        fetch(' https://flex-jobs-server-side.vercel.app/jobs', {
             method: "POST",
             headers: {
                 "content-type": "application/json",

@@ -17,7 +17,7 @@ const MyPostedJobsCard = ({ job, singleJob, setSingleJob }) => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/jobs/${_id}`, {
+                fetch(` https://flex-jobs-server-side.vercel.app/jobs/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
