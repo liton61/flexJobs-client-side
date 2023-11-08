@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import RequestsTable from "../RequestsTable/RequestsTable";
+import { Helmet } from "react-helmet";
 
 const BideRequests = () => {
     const [bids, setBids] = useState([]);
@@ -29,6 +30,9 @@ const BideRequests = () => {
                     }
                 </tbody>
             </table>
+            <Helmet>
+                <title>Flex Jobs | Bids Requests</title>
+            </Helmet>
         </div>
     );
 };

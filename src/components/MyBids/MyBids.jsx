@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import BidsTable from "../BidsTable/BidsTable";
+import { Helmet } from "react-helmet";
 
 
 const MyBids = () => {
@@ -29,6 +30,9 @@ const MyBids = () => {
                     }
                 </tbody>
             </table>
+            <Helmet>
+                <title>Flex Jobs | My Bids</title>
+            </Helmet>
         </div>
     );
 };

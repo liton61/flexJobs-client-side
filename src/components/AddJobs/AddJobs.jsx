@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { AuthContext } from "../Provider/AuthProvider";
+import { Helmet } from "react-helmet";
 
 
 const AddJobs = () => {
@@ -91,6 +92,9 @@ const AddJobs = () => {
                     </button>
                 </div>
             </form>
+            <Helmet>
+                <title>Flex Jobs | Add Jobs</title>
+            </Helmet>
         </div>
     );
 };

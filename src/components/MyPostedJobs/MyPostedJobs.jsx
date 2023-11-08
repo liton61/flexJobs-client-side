@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import MyPostedJobsCard from "../MyPostedJobsCard/MyPostedJobsCard";
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 
 
 const MyPostedJobs = () => {
@@ -14,6 +15,9 @@ const MyPostedJobs = () => {
                         setSingleJob={setSingleJob}></MyPostedJobsCard>)
                 }
             </div>
+            <Helmet>
+                <title>Flex Jobs | My Posted Jobs</title>
+            </Helmet>
         </div>
     );
 };

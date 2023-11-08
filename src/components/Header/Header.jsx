@@ -1,19 +1,20 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from '../../assets/logo (1).png';
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 
 const Header = () => {
     const { user, logOut } = useContext(AuthContext);
-    const handleSingOut = () => {
-        logOut()
-            .then(result => {
-                console.log(result.user)
-            })
-            .catch(error => {
-                console.error(error);
-            })
-    }
+    const [active, setActive] = useState(false)
+    // const handleSingOut = () => {
+    //     logOut()
+    //         .then(result => {
+    //             console.log(result.user)
+    //         })
+    //         .catch(error => {
+    //             console.error(error);
+    //         })
+    // }
     return (
         <div>
             <div className="navbar bg-green-300">
@@ -82,7 +83,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    {
+                    {/* {
                         user ?
                             <div className='flex'>
                                 <img className='w-12 mr-2 rounded-full h-12' src={user?.photoURL} alt="" />
@@ -91,7 +92,49 @@ const Header = () => {
                             </div>
                             :
                             <Link to="/login" className="btn btn-active btn-neutral text-sm">Login</Link>
-                    }
+                    } */}
+                    {user?.email ? (
+                        <div className="dropdown dropdown-end ">
+                            <label tabIndex={0} className="cursor-pointer">
+                                <div className="">
+                                    <div className="w-14 rounded-full">
+                                        <img onClick={() => setActive(!active)} className="w-14 rounded-full " src={user?.photoURL} alt={user?.displayName} />
+                                    </div>
+                                </div>
+                            </label>
+
+                            {
+                                active && (
+                                    <div
+                                        tabIndex={0}
+                                        className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+                                    >
+
+                                        <h1 className="px-4 py-2 hover:bg-base-300 rounded-lg" > {user?.displayName} </h1>
+
+                                        <p className="px-4 py-2 hover:bg-base-300 rounded-lg "> {user.email} </p>
+                                        <div
+                                            onClick={logOut}
+                                            className="cursor-pointer text-red-500 px-4 py-2 hover:bg-base-300 rounded-lg"
+                                        >
+                                            <i className="fa-solid fa-right-from-bracket text-red-500"></i> Sign Out
+                                        </div>
+
+                                    </div>
+                                )
+                            }
+
+                        </div>
+                    ) : (
+                        <NavLink
+                            to="/login"
+                            className={({ isActive }) =>
+                                isActive ? 'btn btn-neutral' : 'btn btn-neutral'
+                            }
+                        >
+                            Login
+                        </NavLink>
+                    )}
                 </div>
             </div>
         </div>
